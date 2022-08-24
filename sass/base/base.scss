@@ -1,2 +1,38 @@
+//fonts
+
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+body
+{
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+h1
+{
+    font-family: $font__logo;
+    margin: 0;
+    padding: 16px;
+}
+
+h2, h3, h4, h5, h6, p, button, input
+{
+    font-family: $font__text;
+}
+
+button
+{
+    font-weight: 500;
+}
+
+p
+{
+    font-weight: 300;
+}
+
+a
+{
+    text-decoration: none;
+}

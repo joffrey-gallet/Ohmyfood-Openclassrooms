@@ -1,0 +1,15 @@
+.top__location
+{
+    text-align: center;
+    font-size: 16px;
+    background-color: $color__background__location;
+    padding: 16px;
+
+    &__input
+    {
+        border: none;
+        background-color: $color__background__location;
+        text-align: center;
+        padding: 0px;
+    }
+}
