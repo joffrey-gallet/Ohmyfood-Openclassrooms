@@ -1,6 +1,69 @@
 .top__presentation
 {
-    width: 75%;
     text-align: center;
     margin: auto;
+    background-color: $color__background__body;
+
+    &__heading
+    {
+        width: 75%;
+        margin: auto;
+        padding: 16px;
+    }
+
+    &__subtitle
+    {
+        width: 75%;
+        margin: auto;
+        padding: 16px 0px;
+    }
+}
+
+.top__howto
+{
+   &__heading
+   {
+    padding: 16px;
+   }
+
+   & ul 
+   {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline-start: 20px;
+   }
+
+   &__list
+   {
+    display: flex;
+    gap: 16px;
+    margin: auto;
+    width: 80%;
+    padding: 18px;
+    border-radius: 12px;
+    background-color: $color__background__body;
+    filter: drop-shadow(2px 4px 8px #ececec);
+    font-weight: 500;
+   }
+
+   &__count
+   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: white;
+    font-weight: 500;
+    background-color: $primary;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    margin-left: -32px;
+   }
+
+   & i 
+   {
+    color: $color____howto__icon;
+   }
 }

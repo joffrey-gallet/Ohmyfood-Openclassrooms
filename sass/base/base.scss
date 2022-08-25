@@ -17,9 +17,10 @@ h1
     padding: 16px;
 }
 
-h2, h3, h4, h5, h6, p, button, input
+h2, h3, h4, h5, h6, p, button, input, li
 {
     font-family: $font__text;
+    margin: 0px;
 }
 
 button
@@ -35,4 +36,14 @@ p
 a
 {
     text-decoration: none;
+}
+
+section
+{
+    padding: 16px 0px;
+}
+
+ul
+{
+    list-style-type: none;
 }

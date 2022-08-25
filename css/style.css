@@ -12,8 +12,9 @@ h1 {
   padding: 16px;
 }
 
-h2, h3, h4, h5, h6, p, button, input {
+h2, h3, h4, h5, h6, p, button, input, li {
   font-family: "Roboto", sans-serif;
+  margin: 0px;
 }
 
 button {
@@ -28,7 +29,16 @@ a {
   text-decoration: none;
 }
 
+section {
+  padding: 16px 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+
 button {
+  cursor: pointer;
   border-radius: 18px;
   border: none;
   padding: 12px;
@@ -39,6 +49,10 @@ button {
   box-shadow: 2px 4px 6px #D0D0D0;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
 .top__location {
   text-align: center;
   font-size: 16px;
@@ -46,6 +60,7 @@ button {
   padding: 16px;
 }
 .top__location__input {
+  cursor: pointer;
   border: none;
   background-color: #EAEAEA;
   text-align: center;
@@ -60,9 +75,56 @@ button {
 }
 
 .top__presentation {
-  width: 75%;
   text-align: center;
   margin: auto;
+  background-color: #F6F6F6;
+}
+.top__presentation__heading {
+  width: 75%;
+  margin: auto;
+  padding: 16px;
+}
+.top__presentation__subtitle {
+  width: 75%;
+  margin: auto;
+  padding: 16px 0px;
+}
+
+.top__howto__heading {
+  padding: 16px;
+}
+.top__howto ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-inline-start: 20px;
+}
+.top__howto__list {
+  display: flex;
+  gap: 16px;
+  margin: auto;
+  width: 80%;
+  padding: 18px;
+  border-radius: 12px;
+  background-color: #F6F6F6;
+  filter: drop-shadow(2px 4px 8px #ececec);
+  font-weight: 500;
+}
+.top__howto__count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: white;
+  font-weight: 500;
+  background-color: #9356DC;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  margin-left: -32px;
+}
+.top__howto i {
+  color: #7E7E7E;
 }
 
 /*# sourceMappingURL=style.css.map */
