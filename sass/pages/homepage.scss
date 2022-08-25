@@ -8,7 +8,6 @@
     {
         width: 75%;
         margin: auto;
-        padding: 16px;
     }
 
     &__subtitle
@@ -21,11 +20,6 @@
 
 .top__howto
 {
-   &__heading
-   {
-    padding: 16px;
-   }
-
    & ul 
    {
     display: flex;
@@ -45,6 +39,18 @@
     background-color: $color__background__body;
     filter: drop-shadow(2px 4px 8px #ececec);
     font-weight: 500;
+   }
+
+   &__list:hover
+   {
+    cursor: pointer;
+    background-color: darken($color: $color__background__body, $amount: 2%);
+    filter: drop-shadow(2px 4px 8px darken($color: #ececec, $amount: 10%));
+
+       & i 
+       {
+        color: $primary;
+       }
    }
 
    &__count

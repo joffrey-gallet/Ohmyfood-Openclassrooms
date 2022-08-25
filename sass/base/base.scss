@@ -17,12 +17,21 @@ h1
     padding: 16px;
 }
 
+h2
+{
+    padding: 16px;
+}
+
 h2, h3, h4, h5, h6, p, button, input, li
 {
     font-family: $font__text;
     margin: 0px;
 }
 
+input
+{
+    font-weight: 500;
+}
 button
 {
     font-weight: 500;

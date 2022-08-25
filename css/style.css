@@ -12,9 +12,17 @@ h1 {
   padding: 16px;
 }
 
+h2 {
+  padding: 16px;
+}
+
 h2, h3, h4, h5, h6, p, button, input, li {
   font-family: "Roboto", sans-serif;
   margin: 0px;
+}
+
+input {
+  font-weight: 500;
 }
 
 button {
@@ -82,7 +90,6 @@ button:hover {
 .top__presentation__heading {
   width: 75%;
   margin: auto;
-  padding: 16px;
 }
 .top__presentation__subtitle {
   width: 75%;
@@ -90,9 +97,6 @@ button:hover {
   padding: 16px 0px;
 }
 
-.top__howto__heading {
-  padding: 16px;
-}
 .top__howto ul {
   display: flex;
   flex-direction: column;
@@ -109,6 +113,14 @@ button:hover {
   background-color: #F6F6F6;
   filter: drop-shadow(2px 4px 8px #ececec);
   font-weight: 500;
+}
+.top__howto__list:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  filter: drop-shadow(2px 4px 8px lightgray);
+}
+.top__howto__list:hover i {
+  color: #9356DC;
 }
 .top__howto__count {
   display: flex;
