@@ -1,6 +1,6 @@
 
 
-button
+.buttons
 {
     cursor: pointer;
     border-radius: 18px;
@@ -13,7 +13,9 @@ button
     box-shadow: 2px 4px 6px $color__button__shadow;
 }
 
-button:hover
+.buttons:hover
 {
- opacity: 0.8;
+ opacity: 0.9;
+ transition: 0.8s;
+ box-shadow: 2px 4px 8px darken($color: $color__button__shadow, $amount: 10%);
 }

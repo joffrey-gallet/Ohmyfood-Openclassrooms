@@ -42,25 +42,27 @@
 
                 <h2 class="top__presentation__heading">Réservez le menu qui vous convient</h2>
                 <p class="top__presentation__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <a href="#restaurants__heading"><button class="top__presentation__explore">Explorez nos restaurants</button></a>
+                <div class="top__presentation__button--container">
+                     <a href="#restaurants__heading" class="buttons">Explorez nos restaurants</a>
+                </div>
            
             </section>
 
             <section class="top__howto">
 
                 <h2 class="top__howto__heading">Fonctionnement</h2>
-                <ul>
-                    <li class="top__howto__list">
+                <ul class="top__howto__list">
+                    <li class="top__howto__list--element">
                         <span class="top__howto__count">1</span>
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         Choisissez une restaurant
                     </li>
-                    <li class="top__howto__list">
+                    <li class="top__howto__list--element">
                         <span class="top__howto__count">2</span>
                         <i class="fa-solid fa-list"></i>
                          Composez votre menu
                         </li>
-                    <li class="top__howto__list">
+                    <li class="top__howto__list--element">
                         <span class="top__howto__count">3</span>
                         <i class="fa-solid fa-store"></i>
                         Dégustez au restaurant
@@ -72,7 +74,46 @@
         </div>
 
         <section class="restaurants">
-            <h2 id="restaurants__heading">Restaurants</h2>
+
+            <div class="restaurants__wrapper">
+
+                <h2 id="restaurants__heading">Restaurants</h2>
+
+                <div class="restaurants__container">
+    
+                    <article class="restaurants__card">
+    
+                        <a href="menus/la-palette-du-gout.html" class="restaurants__card--link">
+                            <div class="restaurants__card__image">
+                                <img src="images/restaurants/la-palette-du-gout-jay-wennington.jpg" alt="plat servi à La palette du goût">
+                                <span class="restaurants__card__image--new">Nouveau</span>
+                            </div>
+                            <div class="restaurants__card__body">
+                                <div class="restaurants__card__heading">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <div class="restaurants__card__icon">
+                                   <p><i class="fa-regular fa-heart"></i></p>
+                                   </div> 
+                            </div>
+                        </a>
+    
+                    </article>
+    
+    
+                    <a class="restaurant__card"></a>
+                    <a class="restaurant__card"></a>
+                    <a class="restaurant__card"></a>
+                    <a class="restaurant__card"></a>
+    
+                </div>
+
+            </div>
+
+           
+            
+
 
         </section>
 

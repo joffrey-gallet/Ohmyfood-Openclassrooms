@@ -5,6 +5,11 @@
     background-color: $color__background__location;
     padding: 16px;
 
+    &:hover
+    {
+        cursor: pointer;
+    }
+
     &__input
     {
         cursor: pointer;
