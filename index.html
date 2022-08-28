@@ -22,7 +22,7 @@
 
     <header class="header">
 
-        <h1 class="header__logo">ohmyfood</h1>
+        <h1 id="header__logo">ohmyfood</h1>
 
     </header>
 
@@ -43,7 +43,7 @@
                 <h2 class="top__presentation__heading">Réservez le menu qui vous convient</h2>
                 <p class="top__presentation__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <div class="top__presentation__button--container">
-                     <a href="#restaurants__heading" class="buttons">Explorez nos restaurants</a>
+                     <a href="#restaurants" class="buttons">Explorez nos restaurants</a>
                 </div>
            
             </section>
@@ -73,11 +73,11 @@
 
         </div>
 
-        <section class="restaurants">
+        <section id="restaurants">
 
             <div class="restaurants__wrapper">
 
-                <h2 id="restaurants__heading">Restaurants</h2>
+                <h2 class="restaurants__heading">Restaurants</h2>
 
                 <div class="restaurants__container">
     
@@ -100,23 +100,107 @@
                         </a>
     
                     </article>
-    
-    
-                    <a class="restaurant__card"></a>
-                    <a class="restaurant__card"></a>
-                    <a class="restaurant__card"></a>
-                    <a class="restaurant__card"></a>
+
+                    <article class="restaurants__card">
+
+                        <a href="menus/la-note-enchantee.html" class="restaurants__card--link">
+                            <div class="restaurants__card__image">
+                                <img src="images/restaurants/la-note-enchantee.jpg" alt="plat servi à La note enchantée">
+                                <span class="restaurants__card__image--new">Nouveau</span>
+                            </div>
+                            <div class="restaurants__card__body">
+                                <div class="restaurants__card__heading">
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>
+                                </div>
+                                <div class="restaurants__card__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </article>
+
+                    <article class="restaurants__card">
+
+                        <a href="menus/a-la-francaise.html" class="restaurants__card--link">
+                            <div class="restaurants__card__image">
+                                <img src="images/restaurants/a-la-francaise.jpg" alt="plat servi à À la française">
+                            </div>
+                            <div class="restaurants__card__body">
+                                <div class="restaurants__card__heading">
+                                    <h3>À la française</h3>
+                                    <p>Cité Rouge</p>
+                                </div>
+                                <div class="restaurants__card__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </article>
+
+                    <article class="restaurants__card">
+
+                        <a href="menus/le-delice-des-sens.html" class="restaurants__card--link">
+                            <div class="restaurants__card__image">
+                                <img src="images/restaurants/le-delice-des-sens-louis-hansel.jpg" alt="plat servi à Le délice des sens">
+                            </div>
+                            <div class="restaurants__card__body">
+                                <div class="restaurants__card__heading">
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <div class="restaurants__card__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </article>
+
     
                 </div>
 
             </div>
 
-           
-            
-
-
         </section>
 
     </main>
+
+    <footer class="footer">
+        <section class="footer__wrapper">
+            <a href="#header__logo">
+                <h3 class="footer__logo">ohmyfood</h3>
+            </a>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#" class="footer__list__element">
+                        <i class="fa-solid fa-utensils"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer__list__element">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li>
+                    <p>
+                        <a href="#">Mentions légales</a> 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a href="mailto:#" title="email">Contact</a>
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+       
+    </footer>
 </body>
 </html>

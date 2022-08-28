@@ -1,8 +1,21 @@
 .header
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     position: relative;
-    text-align: center;
-    box-shadow: 0px 2px 4px #CFCFCF;
+
+    &__ico
+    {
+        position: absolute;
+        left: 24px;
+        font-size: 24px;
+    }
+
+    & a 
+    {
+        color: black;
+    }
 }
 

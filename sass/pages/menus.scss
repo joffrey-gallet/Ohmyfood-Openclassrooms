@@ -1,0 +1,35 @@
+/* bannière */ 
+
+.banner
+{
+    width: 100%;
+
+    & img 
+    {
+        width: 100%;
+    }
+}
+
+.menu
+{
+    position: relative;
+    margin-top: -50px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    background-color: $color__background__body;
+
+    &__heading
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & i 
+        {
+            font-size: 32px;
+            padding-right: 24px;
+        }
+    }
+
+    
+}

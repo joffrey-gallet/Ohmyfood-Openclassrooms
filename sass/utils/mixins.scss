@@ -1,0 +1,5 @@
+// card shadow
+
+@mixin shadow__card{
+    filter: drop-shadow(2px 4px 8px darken($color__background__body, 20%));  
+}
