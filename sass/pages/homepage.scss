@@ -114,6 +114,14 @@
         @include shadow__card;
         background-color: white;
         border-radius: 16px;
+        transform: scale(1);
+        transition: 0.2s;
+
+        &:hover
+        {
+            
+            @include shadow__card--hover;
+        }
 
         &__body
         {

@@ -1,5 +1,11 @@
 // card shadow
 
-@mixin shadow__card{
+@mixin shadow__card {
     filter: drop-shadow(2px 4px 8px darken($color__background__body, 20%));  
+}
+
+@mixin shadow__card--hover {
+    filter: drop-shadow(4px 8px 12px darken($color__background__body, 30%)); 
+    transform: scale(1.002);
+    opacity: 0.9;
 }

@@ -2,20 +2,22 @@
 
 .buttons
 {
+    width: 50%;
+    text-align: center;
     cursor: pointer;
-    border-radius: 18px;
+    border-radius: 24px;
     border: none;
-    padding: 12px;
+    padding: 16px;
     margin-top: 16px;
     background-image: $color__button;
     color: white;
     font-weight: 500;
     box-shadow: 2px 4px 6px $color__button__shadow;
+    transition: 0.2s;
 }
 
 .buttons:hover
 {
  opacity: 0.8;
- transition: 0.8s;
- box-shadow: 2px 4px 8px darken($color: $color__button__shadow, $amount: 10%);
+ box-shadow: 2px 4px 8px darken($color: $color__button__shadow, $amount: 25%);
 }

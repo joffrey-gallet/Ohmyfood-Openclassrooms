@@ -10,7 +10,7 @@
     }
 }
 
-.menu
+.container__menu
 {
     position: relative;
     margin-top: -50px;
@@ -23,13 +23,140 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 16px 32px;
+
+        & h2
+        {
+            font-family: $font__logo;
+        }
 
         & i 
         {
             font-size: 32px;
-            padding-right: 24px;
         }
     }
+
+.menu
+{
+    padding: 16px;
+
+    &__parts
+    {
+        &__heading
+        {
+            text-transform: uppercase;
+            font-weight: 300;
+
+            &::after
+            {
+                display: flex;
+                content: "";
+                width: 45px;
+                border-top: 3px solid $tertiary;
+                margin: 4px 0px;
+            }
+        }
+    }
+
+    &__dishwrapper
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    &__dish
+    {
+        cursor: pointer;
+        display: flex;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 14px;
+        transform: scale(1);
+        @include shadow__card;
+ 
+        &__heading
+        {
+            width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 16px;
+            line-height: 24px;
+
+            &__title
+            {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &__sidedish
+            {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+        }
+
+        &__price
+        {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 20%;
+            font-family: $font__text;
+            font-weight: 700;
+        }
+        
+        &__check
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            background-color: $tertiary;
+            margin-right: -25%;
+            transform: scale(1);
+            
+            & i 
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 18px;
+                height: 18px;
+                color: $tertiary;
+                background-color: white;
+                border-radius: 100%;
+                font-size: 12px;
+                transform: rotate(0deg);
+            }
+        }
+
+        &:hover
+        {
+            @include shadow__card--hover;
+
+            & .menu__dish__check
+            {
+                transition-duration: 0.5s;
+                margin-right: 0%;
+            }
+
+            & .menu__dish__check i
+            {
+                transform: rotate(720deg);
+                transition-duration: 0.5s;
+            }
+        }
+
+        
+    }
+.buttons__wrapper
+{
+    display: flex;
+    justify-content: center;
+}
+}
 
     
 }
