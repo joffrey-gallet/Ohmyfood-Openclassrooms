@@ -140,6 +140,30 @@
         &__icon
         {
             font-size: 20px;
+
+            & i
+            {
+                position: absolute;
+                font-size: 24px;
+                bottom: 24px;
+                right: 24px;
+                
+                &.fa-solid
+                {
+                    @include full__heart;
+    
+                    &:hover
+                    {
+                        @include full__heart--move;
+                    }
+    
+                    &:active
+                    {
+                        @include full__heart--move;
+                    }
+             }
+
+            }
         }
 
         &--link

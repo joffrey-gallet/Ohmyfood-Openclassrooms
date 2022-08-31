@@ -33,6 +33,25 @@
         & i 
         {
             font-size: 32px;
+            position: absolute;
+            right: 32px;
+
+            &.fa-solid
+            {
+                @include full__heart;
+                
+
+                &:hover
+                {
+                    @include full__heart--move;
+                }
+
+                &:active
+                {
+                    @include full__heart--move;
+                }
+                
+            }
         }
     }
 
@@ -138,14 +157,14 @@
 
             & .menu__dish__check
             {
-                transition-duration: 0.5s;
+                transition-duration: 0.8s;
                 margin-right: 0%;
             }
 
             & .menu__dish__check i
             {
                 transform: rotate(720deg);
-                transition-duration: 0.5s;
+                transition-duration: 0.8s;
             }
         }
 

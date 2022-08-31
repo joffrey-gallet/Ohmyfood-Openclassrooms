@@ -9,3 +9,17 @@
     transform: scale(1.002);
     opacity: 0.9;
 }
+
+@mixin full__heart {
+    opacity: 0;
+                background: linear-gradient($primary, $secondary);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent; 
+}
+
+@mixin full__heart--move {
+    cursor: pointer;
+    animation: heart__animation 0.5s ease-in-out both;
+}
