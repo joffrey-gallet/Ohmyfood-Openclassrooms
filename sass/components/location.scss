@@ -9,7 +9,13 @@
     &:hover
     {
         cursor: pointer;
+
+        & i 
+        {
+            animation: location__animation 0.5s ease-in-out both;
+        }
     }
+
 
     &__input
     {
@@ -18,5 +24,8 @@
         background-color: $color__background__location;
         text-align: center;
         padding: 0px;
+        outline: none;
+
+
     }
 }

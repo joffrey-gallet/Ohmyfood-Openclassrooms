@@ -1,3 +1,61 @@
+/* animation de l'icone place */
+
+@keyframes location__animation
+{
+  0% {
+    transform: scale(0.1);
+  }
+
+  12% {
+    transform: scale(0.3);
+  }
+
+  25% {
+    transform: scale(0.5);
+  }
+
+  30% {
+    transform: scale(0.7);
+  }
+
+  40% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  55% {
+    transform: scale(1.1);
+  }
+
+  60% {
+    transform: scale(1.2);
+  }
+
+  70% {
+    transform: scale(1.4);
+  }
+
+  80% {
+    transform: 1.5;
+  }
+
+  90% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+/* animation de remplissage du coeur */
+
 @keyframes heart__animation 
 {
     0% {
@@ -17,12 +75,12 @@
   }
   
     50% {
-      transform: scale(0.7);
+      transform: scale(0.6);
       opacity: 0.65;
   }
 
     65% {
-        transform: scale(0.9);
+        transform: scale(0.7);
         opacity: 0.8;
   }
 
@@ -33,7 +91,7 @@
   
     100% {
       opacity: 1;
-      transform: scale(1);
+      transform: scale(1.05);
       
     }
 }

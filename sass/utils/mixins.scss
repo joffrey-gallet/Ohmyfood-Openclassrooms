@@ -13,6 +13,7 @@
 @mixin full__heart {
     opacity: 0;
                 background: linear-gradient($primary, $secondary);
+                background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -moz-background-clip: text;
@@ -21,5 +22,14 @@
 
 @mixin full__heart--move {
     cursor: pointer;
-    animation: heart__animation 0.5s ease-in-out both;
+    animation: heart__animation 0.2s ease-in-out both;
+}
+
+@mixin loader__background{
+    position: fixed;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 121, 218, 0.3), rgba(147, 86, 220, 0.5));
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    backdrop-filter: blur(10px);
 }

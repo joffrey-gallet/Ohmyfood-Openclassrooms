@@ -1,3 +1,10 @@
+/**Page d'accueil ohmyfood**/ 
+
+.loader
+{
+    @include loader__background;
+}
+
 /* presentation de ohmyfood */
 
 .top__presentation
@@ -57,7 +64,7 @@
    {
     cursor: pointer;
     background-color: lighten($color: $primary, $amount: 35%);
-    transition: 0.2s;
+    transition: 0.15s ease-in-out;
     filter: drop-shadow(2px 4px 8px darken($color: #ececec, $amount: 10%));
 
        & i 
@@ -111,11 +118,12 @@
 
     &__card
     {
+        position: relative;
         @include shadow__card;
         background-color: white;
         border-radius: 16px;
         transform: scale(1);
-        transition: 0.2s;
+        transition: 0.15s ease-in-out;
 
         &:hover
         {
@@ -139,32 +147,34 @@
 
         &__icon
         {
-            font-size: 20px;
+            position: absolute;
+            right: 52px;
+            bottom: 52px;
 
-            & i
+            & i 
             {
                 position: absolute;
-                font-size: 24px;
-                bottom: 24px;
-                right: 24px;
-                
+                font-size: 32px;
+
                 &.fa-solid
                 {
                     @include full__heart;
-    
-                    &:hover
-                    {
-                        @include full__heart--move;
-                    }
-    
-                    &:active
-                    {
-                        @include full__heart--move;
-                    }
-             }
+                }
+            }
 
+            &:hover .fa-solid
+            {
+                @include full__heart--move;
+               
+            }
+
+            &:active .fa-solid
+            {
+                @include full__heart--move;
+               
             }
         }
+
 
         &--link
         {
@@ -201,11 +211,7 @@
                 font-weight: bold;
                 border-radius: 2px;
             }
-        }
+        }   
     }
-
-    
-
-
 
 }

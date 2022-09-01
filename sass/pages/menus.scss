@@ -1,3 +1,5 @@
+/** Page des restaurants partenaires ohmyfood**/ 
+
 /* bannière */ 
 
 .banner
@@ -10,6 +12,8 @@
     }
 }
 
+/* Menu du restaurant */ 
+
 .container__menu
 {
     position: relative;
@@ -20,6 +24,7 @@
 
     &__heading
     {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -29,6 +34,14 @@
         {
             font-family: $font__logo;
         }
+    }
+
+    &__heart
+    {
+        cursor: pointer;
+        position: absolute;
+        top: 32px;
+        right: 0px;
 
         & i 
         {
@@ -37,23 +50,25 @@
             right: 32px;
 
             &.fa-solid
-            {
-                @include full__heart;
-                
-
-                &:hover
                 {
-                    @include full__heart--move;
+                    @include full__heart;
                 }
+        }
 
-                &:active
-                {
-                    @include full__heart--move;
-                }
-                
-            }
+        &:hover .fa-solid
+        {
+            @include full__heart--move;
+               
+        }
+
+        &:active .fa-solid
+        {
+            @include full__heart--move;
+               
         }
     }
+
+    
 
 .menu
 {
@@ -83,7 +98,7 @@
         flex-direction: column;
         gap: 18px;
     }
-
+ 
     &__dish
     {
         cursor: pointer;
@@ -125,7 +140,7 @@
             font-family: $font__text;
             font-weight: 700;
         }
-        
+
         &__check
         {
             display: flex;
