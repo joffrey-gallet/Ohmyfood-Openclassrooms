@@ -71,6 +71,36 @@
     transform: scale(1.05);
   }
 }
+/* animation background__loader*/
+@keyframes background__loader--blur {
+  0% {
+    backdrop-filter: blur(15px);
+  }
+  99% {
+    backdrop-filter: blur(0px);
+    background-image: none;
+    z-index: 0;
+  }
+  100% {
+    backdrop-filter: blur(0px);
+    background-image: none;
+    z-index: -1;
+  }
+}
+/* animation dots loader*/
+@keyframes dots--reveal {
+  from {
+    transform: scale(0.001);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes dots--slide {
+  to {
+    transform: translateX(24px);
+  }
+}
 body {
   box-sizing: border-box;
   margin: 0 auto;
@@ -213,7 +243,45 @@ ul {
   height: 100vh;
   width: 100vw;
   z-index: 1;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  animation: background__loader--blur 1.4s linear both;
+  animation-delay: 0.1s;
+}
+.loader__dots {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 120vh;
+}
+.loader__dots--dot {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: #99E2D0;
+  opacity: 0.5;
+  border: 1px;
+  box-shadow: inset 1px 1px 1px #F6F6F6;
+  animation: 0.3s ease 6;
+}
+.loader__dots--dot1 {
+  left: 0px;
+  animation-name: dots--reveal;
+}
+.loader__dots--dot2 {
+  left: 0px;
+  animation-name: dots--slide;
+}
+.loader__dots--dot3 {
+  left: 24px;
+  animation-name: dots--slide;
+}
+.loader__dots--dot4 {
+  left: 48px;
+  animation-name: dots--reveal;
+  animation-direction: reverse;
 }
 
 /* presentation de ohmyfood */

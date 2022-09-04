@@ -95,3 +95,35 @@
       
     }
 }
+/* animation background__loader*/ 
+@keyframes background__loader--blur{
+  0%{
+    backdrop-filter: blur(15px);
+  }
+  99%{
+    backdrop-filter: blur(0px);
+    background-image: none;
+    z-index: 0;
+  }
+  100%{
+    backdrop-filter: blur(0px);
+    background-image: none;
+    z-index: -1;
+  }
+ 
+}
+/* animation dots loader*/
+
+@keyframes dots--reveal {
+  from {
+    transform: scale(0.001);
+  }
+  to { 
+    transform: scale(1);
+  }
+}
+
+
+  @keyframes dots--slide {
+    to { transform: translateX(24px) }
+}
