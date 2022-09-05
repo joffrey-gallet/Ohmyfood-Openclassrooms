@@ -76,6 +76,7 @@
 
     &__parts
     {
+        
         &__heading
         {
             text-transform: uppercase;
@@ -91,6 +92,7 @@
             }
         }
     }
+
 
     &__dishwrapper
     {
@@ -108,6 +110,8 @@
         border-radius: 14px;
         transform: scale(1);
         @include shadow__card;
+        animation: card--iscoming 1s ease-in-out both;
+        animation-delay: 1.5s;
  
         &__heading
         {
@@ -185,12 +189,67 @@
 
         
     }
+
+    &__dish1
+    {
+        animation-name: card--iscoming;
+        animation-delay: 0.5s;
+    }
+
+    &__dish2
+    {
+        animation-name: card--iscoming;
+        animation-delay: 0.7s;
+    }
+
+    &__dish3
+    {
+        animation-name: card--iscoming;
+        animation-delay: 0.9s;
+    }
+
+    &__dish4
+    {
+        animation-name: card--iscoming;
+        animation-delay: 1.1s;
+    }
+
+    &__dish5
+    {
+        animation-name: card--iscoming;
+        animation-delay: 1.3s;
+    }
+
+    &__dish6
+    {
+        animation-name: card--iscoming;
+        animation-delay: 1.5s;
+    }
+
+    &__dish7
+    {
+        animation-name: card--iscoming;
+        animation-delay: 1.7s;
+    }
+
+    &__dish8
+    {
+        animation-name: card--iscoming;
+        animation-delay: 1.9s;
+    }
+
+    &__dish9
+    {
+        animation-name: card--iscoming;
+        animation-delay: 2.1s;
+    }
+
+
 .buttons__wrapper
 {
     display: flex;
     justify-content: center;
 }
 }
-
-    
+   
 }

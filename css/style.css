@@ -101,6 +101,25 @@
     transform: translateX(24px);
   }
 }
+@keyframes spinner--of {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* animation apparition de la carte */
+@keyframes card--iscoming {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 body {
   box-sizing: border-box;
   margin: 0 auto;
@@ -264,23 +283,24 @@ ul {
   opacity: 0.5;
   border: 1px;
   box-shadow: inset 1px 1px 1px #F6F6F6;
-  animation: 0.3s ease 6;
+  animation: all 0.3s ease 5;
+  animation-fill-mode: forwards;
 }
 .loader__dots--dot1 {
   left: 0px;
-  animation-name: dots--reveal;
+  animation-name: dots--reveal, spinner--of;
 }
 .loader__dots--dot2 {
   left: 0px;
-  animation-name: dots--slide;
+  animation-name: dots--slide, spinner--of;
 }
 .loader__dots--dot3 {
   left: 24px;
-  animation-name: dots--slide;
+  animation-name: dots--slide, spinner--of;
 }
 .loader__dots--dot4 {
   left: 48px;
-  animation-name: dots--reveal;
+  animation-name: dots--reveal, spinner--of;
   animation-direction: reverse;
 }
 
@@ -371,6 +391,8 @@ ul {
   border-radius: 16px;
   transform: scale(1);
   transition: 0.15s ease-in-out;
+  animation: card--iscoming 1s ease-in-out both;
+  animation-delay: 1.5s;
 }
 .restaurants__card:hover {
   filter: drop-shadow(4px 8px 12px #aaaaaa);
@@ -441,6 +463,22 @@ ul {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   border-radius: 2px;
+}
+.restaurants__card1 {
+  animation-name: card--iscoming;
+  animation-delay: 0.5s;
+}
+.restaurants__card2 {
+  animation-name: card--iscoming;
+  animation-delay: 0.7s;
+}
+.restaurants__card3 {
+  animation-name: card--iscoming;
+  animation-delay: 0.9s;
+}
+.restaurants__card4 {
+  animation-name: card--iscoming;
+  animation-delay: 1.1s;
 }
 
 /** Page des restaurants partenaires ohmyfood**/
@@ -525,6 +563,8 @@ ul {
   border-radius: 14px;
   transform: scale(1);
   filter: drop-shadow(2px 4px 8px #c3c3c3);
+  animation: card--iscoming 1s ease-in-out both;
+  animation-delay: 1.5s;
 }
 .container__menu .menu__dish__heading {
   width: 80%;
@@ -582,6 +622,42 @@ ul {
 .container__menu .menu__dish:hover .menu__dish__check i {
   transform: rotate(720deg);
   transition-duration: 0.8s;
+}
+.container__menu .menu__dish1 {
+  animation-name: card--iscoming;
+  animation-delay: 0.5s;
+}
+.container__menu .menu__dish2 {
+  animation-name: card--iscoming;
+  animation-delay: 0.7s;
+}
+.container__menu .menu__dish3 {
+  animation-name: card--iscoming;
+  animation-delay: 0.9s;
+}
+.container__menu .menu__dish4 {
+  animation-name: card--iscoming;
+  animation-delay: 1.1s;
+}
+.container__menu .menu__dish5 {
+  animation-name: card--iscoming;
+  animation-delay: 1.3s;
+}
+.container__menu .menu__dish6 {
+  animation-name: card--iscoming;
+  animation-delay: 1.5s;
+}
+.container__menu .menu__dish7 {
+  animation-name: card--iscoming;
+  animation-delay: 1.7s;
+}
+.container__menu .menu__dish8 {
+  animation-name: card--iscoming;
+  animation-delay: 1.9s;
+}
+.container__menu .menu__dish9 {
+  animation-name: card--iscoming;
+  animation-delay: 2.1s;
 }
 .container__menu .menu .buttons__wrapper {
   display: flex;

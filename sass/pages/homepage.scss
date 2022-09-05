@@ -25,31 +25,32 @@
             opacity: 0.5;
             border: 1px;
             box-shadow: inset 1px 1px 1px $color__background__body;
-            animation: 0.3s ease 6;
+            animation: all 0.3s ease 5;
+            animation-fill-mode: forwards;
         }
 
         &--dot1
         {
             left: 0px;
-            animation-name: dots--reveal ;
+            animation-name: dots--reveal, spinner--of ;
         }
 
         &--dot2
         {
             left: 0px;
-            animation-name: dots--slide;
+            animation-name: dots--slide, spinner--of;
         }
 
         &--dot3
         {
             left: 24px;
-            animation-name: dots--slide;
+            animation-name: dots--slide, spinner--of;
         }
 
         &--dot4
         {
             left: 48px;
-            animation-name: dots--reveal;
+            animation-name: dots--reveal, spinner--of;
             animation-direction: reverse;
         }
     }
@@ -175,6 +176,8 @@
         border-radius: 16px;
         transform: scale(1);
         transition: 0.15s ease-in-out;
+        animation: card--iscoming 1s ease-in-out both;
+        animation-delay: 1.5s;
 
         &:hover
         {
@@ -263,6 +266,27 @@
                 border-radius: 2px;
             }
         }   
+    }
+    
+    &__card1
+    {
+        animation-name: card--iscoming;
+        animation-delay: 0.5s;
+    }
+    &__card2
+    {
+        animation-name: card--iscoming;
+        animation-delay: 0.7s;
+    }
+    &__card3
+    {
+        animation-name: card--iscoming;
+        animation-delay: 0.9s;
+    }
+    &__card4
+    {
+        animation-name: card--iscoming;
+        animation-delay: 1.1s;
     }
 
 }
