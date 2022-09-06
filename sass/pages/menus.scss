@@ -187,6 +187,23 @@
             }
         }
 
+        &:active
+        {
+            @include shadow__card--hover;
+
+            & .menu__dish__check
+            {
+                transition-duration: 0.8s;
+                margin-right: 0%;
+            }
+
+            & .menu__dish__check i
+            {
+                transform: rotate(720deg);
+                transition-duration: 0.8s;
+            }
+        }
+
         
     }
 

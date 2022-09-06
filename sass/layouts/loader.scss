@@ -1,0 +1,55 @@
+.loader
+{
+    @include loader__background;
+    animation: background__loader--blur 1.4s linear both;
+    animation-delay: 0.1s;
+
+    &__dots
+    {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 120px;
+        height: 120vh;
+
+        &--dot
+        {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            background-color: $tertiary;
+            opacity: 0.5;
+            border: 1px;
+            box-shadow: inset 1px 1px 1px $color__background__body;
+            animation: all 0.3s ease 5;
+            animation-fill-mode: forwards;
+        }
+
+        &--dot1
+        {
+            left: 0px;
+            animation-name: dots--reveal, spinner--of ;
+        }
+
+        &--dot2
+        {
+            left: 0px;
+            animation-name: dots--slide, spinner--of;
+        }
+
+        &--dot3
+        {
+            left: 24px;
+            animation-name: dots--slide, spinner--of;
+        }
+
+        &--dot4
+        {
+            left: 48px;
+            animation-name: dots--reveal, spinner--of;
+            animation-direction: reverse;
+        }
+    }
+}
