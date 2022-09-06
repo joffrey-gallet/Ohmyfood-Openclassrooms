@@ -123,7 +123,6 @@
 body {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 1920px;
 }
 
 h1 {
@@ -255,7 +254,6 @@ ul {
   color: #99E2D0;
 }
 
-/**Page d'accueil ohmyfood**/
 .loader {
   position: fixed;
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 121, 218, 0.3), rgba(147, 86, 220, 0.5));
@@ -304,6 +302,7 @@ ul {
   animation-direction: reverse;
 }
 
+/**Page d'accueil ohmyfood**/
 /* presentation de ohmyfood */
 .top__presentation {
   text-align: center;
@@ -370,6 +369,15 @@ ul {
   color: #7E7E7E;
 }
 
+@media screen and (min-width: 1024px) {
+  .top__howto {
+    max-width: 1920px;
+  }
+  .top__howto__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 /* Les restaurants */
 #restaurants {
   background-color: #F6F6F6;
@@ -383,6 +391,21 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+/* tablet version */
+
+@media  screen and (min-width: 768px)
+{
+  
+}
+
+/* desktop version */
+@media screen and (min-width: 1024px) {
+  .restaurants__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 .restaurants__card {
   position: relative;
@@ -410,6 +433,7 @@ ul {
   font-size: 14px;
 }
 .restaurants__card__icon {
+  cursor: pointer;
   position: absolute;
   right: 52px;
   bottom: 52px;
@@ -620,6 +644,19 @@ ul {
   margin-right: 0%;
 }
 .container__menu .menu__dish:hover .menu__dish__check i {
+  transform: rotate(720deg);
+  transition-duration: 0.8s;
+}
+.container__menu .menu__dish:active {
+  filter: drop-shadow(4px 8px 12px #aaaaaa);
+  transform: scale(1.002);
+  opacity: 0.9;
+}
+.container__menu .menu__dish:active .menu__dish__check {
+  transition-duration: 0.8s;
+  margin-right: 0%;
+}
+.container__menu .menu__dish:active .menu__dish__check i {
   transform: rotate(720deg);
   transition-duration: 0.8s;
 }
