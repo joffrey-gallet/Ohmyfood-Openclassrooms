@@ -165,6 +165,10 @@ ul {
   padding-inline-start: 0px;
 }
 
+img {
+  object-fit: cover;
+}
+
 .buttons {
   width: 50%;
   text-align: center;
@@ -381,6 +385,9 @@ ul {
     justify-content: center;
     align-items: center;
   }
+  .top .top__howto__heading {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1024px) {
   .top .top__howto {
@@ -531,6 +538,16 @@ ul {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner img {
+    max-height: 350px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner img {
+    max-height: 350px;
+  }
+}
 /* Menu du restaurant */
 .container__menu {
   position: relative;
@@ -716,6 +733,21 @@ ul {
 .container__menu .menu .buttons__wrapper {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .container__menu__heading {
+    justify-content: center;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    gap: 18px;
+  }
+  .buttons__wrapper {
+    grid-column: 2;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

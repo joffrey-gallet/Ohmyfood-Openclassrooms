@@ -120,6 +120,11 @@
                     align-items: center;
                 }
             }
+            
+            &__howto__heading
+            {
+                text-align: center;
+            }
         } 
 }
 
@@ -127,7 +132,7 @@
 {
     .top__howto
     {
-        max-width: 1920px;       
+        max-width: 1920px; 
 
         &__list
         {

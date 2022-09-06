@@ -12,6 +12,30 @@
     }
 }
 
+@media screen and (min-width:$min-width) and (max-width:$max-width)
+{
+    .banner
+    {
+        & img
+        {
+            max-height: 350px;
+        }
+    }
+    
+}
+
+@media screen and (min-width:$large--screen)
+{
+    .banner
+    {
+        & img 
+        {
+            max-height: 350px;
+        }
+
+    }
+}
+
 /* Menu du restaurant */ 
 
 .container__menu
@@ -269,4 +293,25 @@
 }
 }
    
+}
+
+@media screen and (min-width:$large--screen)
+{
+    .container__menu__heading
+    {
+        justify-content: center;
+    }
+    .menu
+    {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .buttons__wrapper
+    {
+        grid-column: 2;
+    }
+    
 }
