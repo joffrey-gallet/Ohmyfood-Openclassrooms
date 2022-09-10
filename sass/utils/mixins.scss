@@ -22,7 +22,7 @@
 
 @mixin full__heart--move {
     cursor: pointer;
-    animation: heart__animation 0.2s ease-in-out both;
+    animation: heart__animation 0.2s cubic-bezier(1,.1,.99,.27) both;
 }
 
 @mixin loader__background{

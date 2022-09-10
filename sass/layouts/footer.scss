@@ -4,12 +4,7 @@
 {
     background-color: $color__background__footer;
     color: white;
-
-    &__wrapper
-    {
-        width: 90%;
-        margin: auto;
-    }
+    padding: 24px 16px;
 
     &__logo
     {
@@ -19,6 +14,7 @@
     &__list
     {
         line-height: 1.5;
+        margin: 0px;
 
         &__element
         {
@@ -44,6 +40,4 @@
         }
 
     }
-
-
 }

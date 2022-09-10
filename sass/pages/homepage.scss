@@ -25,76 +25,73 @@
 
     &__button--container
     {
+        display: flex;
+        justify-content: center;
         padding: 32px;
-        font-family: $font__text;
     }
 }
 
-@media screen and (min-width:$min-width) and (max-width:$max-width)
-{
-    
-    
-}
 
 //Fonctionnement de ohmyfood
 
 .top__howto
 {
 
-    width: 90%;
-    margin: auto;
+    padding: 16px 16px  32px 16px;
 
-   &__list
-   {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-   }
+    &__list
+    {
 
-   &__list--element
-   {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    padding: 24px;
-    border-radius: 12px;
-    background-color: $color__background__body;
-    filter: drop-shadow(2px 4px 8px #e9e9e9);
-    font-weight: 500;
-   }
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
 
-   &__list--element:hover
-   {
-    cursor: pointer;
-    background-color: lighten($color: $primary, $amount: 35%);
-    transition: 0.15s ease-in-out;
-    filter: drop-shadow(2px 4px 8px darken($color: #ececec, $amount: 10%));
+    &__list--element
+    {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 24px;
+        border-radius: 12px;
+        background-color: $color__background__body;
+        filter: drop-shadow(2px 4px 8px #e9e9e9);
+        font-weight: 500;
+    }
 
-       & i 
-       {
-        color: $primary;
-       }
-   }
+    &__list--element:hover
+    {
+        cursor: pointer;
+        background-color: lighten($color: $primary, $amount: 35%);
+        transition: 0.15s ease-in-out;
+        filter: drop-shadow(2px 4px 8px darken($color: #ececec, $amount: 10%));
+    
+        & i 
+        
+        {
+            color: $primary;
+        }
+    }
 
-   &__count
-   {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    color: white;
-    font-weight: 500;
-    background-color: $primary;
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-    margin-left: -32px;
-   }
+    &__count
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        color: white;
+        font-weight: 500;
+        background-color: $primary;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        margin-left: -32px;
+    }
 
-   & i 
-   {
-    color: $color____howto__icon;
-   }
+    & i 
+    {
+        color: $color____howto__icon;
+    }
 }
 
 @media screen and (min-width:$min-width) and (max-width:$max-width)
@@ -165,8 +162,7 @@
 {
     &__wrapper
     {
-        width: 90%;
-        margin: auto;
+        padding: 16px;
     }
 
     &__container
@@ -174,6 +170,7 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
+        padding-bottom: 48px;
     }
 
     @media screen and (min-width:$min-width) and (max-width:$max-width) 
@@ -246,13 +243,11 @@
             &:hover .fa-solid
             {
                 @include full__heart--move;
-               
             }
 
             &:active .fa-solid
             {
                 @include full__heart--move;
-               
             }
         }
 

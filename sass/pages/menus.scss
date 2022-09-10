@@ -45,6 +45,7 @@
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
     background-color: $color__background__body;
+    
 
     &__heading
     {
@@ -52,7 +53,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 16px 32px;
+        padding: 16px;
 
         & h2
         {
@@ -82,29 +83,28 @@
         &:hover .fa-solid
         {
             @include full__heart--move;
-               
         }
 
         &:active .fa-solid
         {
             @include full__heart--move;
-               
         }
     }
 
-    
 
 .menu
 {
-    padding: 16px;
+    padding: 0px 16px;
 
     &__parts
     {
-        
+        padding-bottom: 32px;
+
         &__heading
         {
             text-transform: uppercase;
             font-weight: 300;
+            padding-bottom: 16px;
 
             &::after
             {
@@ -124,7 +124,7 @@
         flex-direction: column;
         gap: 18px;
     }
- 
+
     &__dish
     {
         cursor: pointer;
@@ -136,7 +136,7 @@
         @include shadow__card;
         animation: card--iscoming 1s ease-in-out both;
         animation-delay: 1.5s;
- 
+
         &__heading
         {
             width: 80%;
@@ -167,6 +167,7 @@
             width: 20%;
             font-family: $font__text;
             font-weight: 700;
+            padding: 16px;
         }
 
         &__check
@@ -290,9 +291,10 @@
 {
     display: flex;
     justify-content: center;
+    padding-bottom: 48px;
 }
 }
-   
+
 }
 
 @media screen and (min-width:$large--screen)
